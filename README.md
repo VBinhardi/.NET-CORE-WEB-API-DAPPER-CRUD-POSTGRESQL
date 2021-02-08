@@ -1,2 +1,5 @@
 # .NET-WEB-API-DAPPER
-WEB API com CRUD usando DAPPER e também SWAGGER para teste
+Tecnologias utilizadas:
+-WEB API em C# .NET CORE
+-Dapper para facilidade em realizar o CRUD e agilidade de consulta
+-PostgreSQL como banco de dados para maior velicidade de consulta e facilidade no gerenciamento do mesmo.
