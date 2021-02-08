@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Dapper;
+using Npgsql;
 
 namespace DapperCRUDAPI.Model
 {
@@ -14,7 +15,7 @@ namespace DapperCRUDAPI.Model
         private string connectionString;
         public ProductRepository()
         {
-            connectionString = @"Data Source=DESKTOP-H0J38MK\MSSQLSERVER01;Initial Catalog=DAPPERDB;Integrated Security=True";
+            connectionString = @"Host=localhost;Username=Access;Password=test123;Database=dapperdb";
         }
         
 
@@ -22,7 +23,7 @@ namespace DapperCRUDAPI.Model
         {
             get
             {
-                return new SqlConnection(connectionString);
+                return new NpgsqlConnection(connectionString);
             }
         }
 
